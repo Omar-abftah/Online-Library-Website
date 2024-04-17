@@ -5,24 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <title>Home Page</title>
 </head>
 
 <body>
 
     <header>
-        <div class="container">
-            <div class="website-logo">
-                <a href="HomePage.html" style="text-decoration: none;">
-                    <img src="#logo" alt="">LOGO
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">
+                    <img src="#logo" alt="">Triple T
                 </a>
             </div>
             <nav class="navigation">
-                <ul style="list-style-type: none;">
-                    <li><a href="#sign in" class="sign-in" style="text-decoration: none;">Sign in</a>
-                    <li><a href="#login" class="login" style="text-decoration: none;">Login</a>
-                </ul>
+                    <a href="user.html">Available books</a>
+                    <a href="borrow_book.html">Borrow a Book</a>
+                    <a href="borrowed_books_users.html">My Books</a>
+                    <button class="login-signup-btn" onclick="redirectLoginBtn()" >Login</button>
+                    <button class="login-signup-btn" onclick="redirectSignUpBtn()" >Sign Up</button>
             </nav>
         </div>
     </header>
@@ -30,24 +31,15 @@
     <section class="main">
         <h2>ABOUT US</h2>
         <div class="about-us">
-            <div class="img">
-                <img src="images/Historic Library Hall School Backdrop for Photography SBH0368.jpeg" alt=""
-                    height="500">
-                <img src="images/Chaotic Academia Aesthetic.jpeg" alt="" width="500">
-            </div>
             <p>
             <p>
                 Welcome to TreasuredTexts Treasury, your virtual haven for literary exploration and knowledge discovery.
                 Established with a passion for fostering a love of reading and learning, TreasuredTexts Treasury is
                 dedicated to providing a diverse array of resources, from classic literature to contemporary works, all
                 within the digital realm.
-            </p>
-            <p>
                 Our passion for literature runs deep, and we believe in the transformative power of words to inspire,
                 educate, and entertain. Whether you're a seasoned bibliophile or just beginning your reading journey,
                 TreasuredTexts Treasury offers something for every literary palate.
-            </p>
-            <p>
                 Behind TreasuredTexts Treasury is a team of dedicated bibliophiles, technologists, and educators who are
                 committed to providing an exceptional online library experience. We meticulously curate our collection
                 to ensure that it reflects the richness and diversity of the literary world, spanning genres, cultures,
@@ -57,41 +49,39 @@
                 Navigating through the virtual shelves of TreasuredTexts Treasury is a breeze, thanks to our intuitive
                 interface and advanced search features. Whether you're in search of a beloved classic, a contemporary
                 bestseller, or an obscure literary treasure, you'll find it at your fingertips.
-            </p>
-            <p>
                 But TreasuredTexts Treasury is more than just a repository of books; it's a thriving community of
                 readers who share a passion for the written word. Through virtual book clubs, author interviews, and
                 online discussions, we provide opportunities for readers to connect, engage, and explore the world of
                 literature together.
-            </p>
-            <p>
+
                 As we continue to grow and evolve, our mission remains steadfast: to celebrate the beauty and power of
                 literature, and to inspire a lifelong love of reading in readers everywhere. Join us at TreasuredTexts
                 Treasury as we embark on a journey of discovery, enlightenment, and endless literary adventure.
             </p>
-
-
-            </p>
+        </div>
+        <div class="img">
+            <img src="images/Historic Library Hall School Backdrop for Photography SBH0368.jpeg" alt="" height="500">
+            <img src="images/Chaotic Academia Aesthetic.jpeg" alt="" width="500">
         </div>
         <br>
         <div class="details">
-            <div class="detils">+20k USERS</div>
-            <div class="detils">+10M BOOKS</div>
-            <div class="detils">+400k ARTICLES</div>
-
-
+            <div class="txt">+20k USERS</div>
+            <div class="txt">+10M BOOKS</div>
+            <div class="txt">+400k ARTICLES</div>
         </div>
     </section>
 
     <footer>
         <H2>CONTACT US</H2>
         <div class="contact-info">
-            <i class="fa-solid fa-envelope"></i> email@gmail.com
-            <i class="fa-solid fa-phone"></i> +97 356 87
-            <i class="fab fa-facebook"></i> <a href="https://facebook" target="_blank">Facebook</a>
-
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> +97 356 87</li>
+                <li><i class="fa-solid fa-envelope" ></i> email@gmail.com</li>
+                <li><i class="fab fa-facebook"></i> <a href="https://facebook" target="_blank">Facebook</a></li>
+            </ul>
         </div>
     </footer>
+    <script src="homePage.js"></script>
 </body>
 
 </html>
