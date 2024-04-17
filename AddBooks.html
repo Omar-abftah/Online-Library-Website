@@ -1,15 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <body>
-
     <h2>Add Books To The Library</h2>
-
     <div>
-
-        <form action="" method="post">
-
+        <form method="post" id="bookForm">
             <label for="title"><b>Title:</b></label><br>
             <input type="text" id="title" name="title" required><br><br>
 
@@ -17,30 +12,31 @@
             <input type="text" id="author" name="author" required><br><br>
 
             <label for="published"><b>Published Year:</b></label><br>
-            <input type="datetime" id="published" name="published" required><br><br>
+            <input type="text" id="published" name="published" required><br><br>
 
             <label for="publisher"><b>Publisher:</b></label><br>
             <input type="text" id="publisher" name="publisher" required><br><br>
 
-            <label for="Quantity"><b>Quantity:</b></label><br>
-            <input type="number" id="Quantity" name="Quantity" required><br><br>
+            <label for="quantity"><b>Quantity:</b></label><br>
+            <input type="number" id="quantity" name="quantity" required><br><br>
 
             <label for="category"><b>Category:</b></label><br>
-            <input type="text" id="category" name="Category" required><br><br>
+            <input type="text" id="category" name="category" required><br><br>
 
-            <label for="ISBN"><b>ISBN:</b></label><br>
-            <input type="number" id="ISBN" name="ISBN" required><br><br>
+            <label for="isbn"><b>ISBN:</b></label><br>
+            <input type="number" id="isbn" name="isbn" required><br><br>
 
             <label for="description"><b>Description:</b></label><br>
             <textarea id="description" name="description" rows="5" cols="50" required></textarea><br><br>
 
-            <input type="submit" value="Submit"> <input type="reset" value="reset">
+            <label for="Book_Cover"><b>Upload Book Cover:</b></label><br>
+            <input type="file" id="Book_Cover" name="Book_Cover"><br><br>
+
+            <input type="submit" value="Submit"> <input type="reset" value="Reset">
 
 
         </form>
-
     </div>
-
 
 </body>
 
