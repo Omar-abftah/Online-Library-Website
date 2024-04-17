@@ -1,33 +1,46 @@
 <!DOCTYPE html>
+
 <head>
-<meta charset="UTF-8">
-<title>Borrow Book</title>
+  <meta charset="UTF-8">
+  <title>Borrow Book</title>
 </head>
 
 <body>
-<h1>Borrow Book</h1>
-<form id="borrow-book-form">
-
-  <label for="book-id">Book ID:</label><br>
-  <input type="text" id="book-id" name="book-id" required><br><br>
-
-  <label for="email">Email:</label><br>
-  <input type="email" id="email" name="email" required><br><br>
-
-  <label for="telephone">Telephone Number:</label><br>
-  <input type="tel" id="telephone" name="telephone" required><br><br>
-
-  <label for="national-id">National ID:</label><br>
-  <input type="text" id="national-id" name="national-id" required><br><br>
-
-  <label for="start_date">Start Date:</label><br>
-  <input type="date" id="start_date" name="start_date" required><br><br>
-
-  <label for="Due_date">Due Date:</label><br>
-  <input type="date" id="Due_date" name="Due_date" required><br><br>
-
-  <input type="submit" value="Borrow Book">
+  <div class="container">
+    <div class="website-logo">
+      <a href="UserHomePage.html">
+        <img src="#logo" alt="">Triple T
+      </a>
+    </div>
+  </div>
+  <h1>Borrow Book</h1>
+  <form id="borrow-book-form">
   
-</form>
-</body>
+    <label for="borrowerName">Borrower's Name:</label><br>
+    <input type="text" id="borrowerName" name="borrowerName" required><br><br>
+  
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br><br>
+  
+    <label for="telephone">Telephone Number:</label><br>
+    <input type="tel" id="telephone" name="telephone" required><br><br>
+  
+    <label for="national-id">National ID:</label><br>
+    <input type="text" id="national-id" name="national-id" required><br><br>
+  
+    <label for="book-title">Book Title:</label><br>
+    <input type="text" id="book-title" name="book-title" required><br><br>
+  
+    <label for="start_date">Start Date:</label><br>
+    <input type="date" id="start_date" name="start_date" required><br><br>
+  
+    <label for="due_date">Due Date:</label><br>
+    <input type="date" id="due_date" name="due_date" required><br><br>
+  
+    <input type="submit" value="Borrow Book">
+  
+  </form>
+  <script src="borrow.js"></script>
+  </body>
+
 </html>
