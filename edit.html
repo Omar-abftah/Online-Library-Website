@@ -3,18 +3,21 @@
         <b><h2>Edit Details</h2></b>
         <br/>
         <div>
+            <form id="form" method="post">
             <p><b>Format:</b></p>
-            <input type="text">
+            <input id="format" type="text" required>
             <p><b>Published:</b></p>
-            <input type="text">
+            <input id="published" type="text" required>
             <p><b>ISBN:</b></p>
-            <input type="text">
+            <input id="ISBN" type="text" required>
             <p><b>Language:</b></p>
-            <input type="text">
+            <input id="Language" type="text" required>
             <p><b>Descriptiopn</b></p>
-            <textarea cols="70" rows="10"></textarea>
+            <textarea id="description" rows="5" cols="50" required></textarea>
+            </form>
         </div>
         <br/>
-        <button>Edit</button>
+        <button id="btn">Edit</button>
+        
     </body>
 </html>
