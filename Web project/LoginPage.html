@@ -4,44 +4,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
     <title>Login</title>
 </head>
 
 <body>
-    <div class="container">
-        <div class="website-logo">
-            <a href="HomePage.html">
-                <img src="#logo" alt="">Triple T
-            </a>
+<header>
+    <div class="top">
+        <div class="logo">
+            <a href="#">Triple T</a>
         </div>
+        <nav class="navigation">
+            <a href="admin.html" target="_blank">Available books</a>
+            <a href="borrow_book.html" target="_blank">Borrow a Book</a>
+            <a href="borrowed_books_users.html" target="_blank">My Books</a>
+        </nav>
     </div>
+</header>
     <h1> Login </h1>
+    <section class="main">
+        <form>
+            <label>Email</label> <br />
 
-    <form>
-        <label>Email</label> <br />
+            <input type="email" required name="email" placeholder="Enter Your Email">
+            <br /> <br />
 
-        <input type="email" required name="email" placeholder="Enter Your Email">
-        <br /> <br />
+            <label>Password</label> <br/>
 
-        <label>Password</label> <br />
+            <input type="password" required name="Password" placeholder="Enter your Password">
+            <br /><br />
 
-        <input type="password" required name="Password" placeholder="Enter your Password">
-        <br /><br />
-
-        <input type="checkbox" id="rembember"> <label for="rembember"> Remember Me </label>
-        &nbsp&nbsp
-        <br>
-        <br>
-        <a href="ForgetPassword.html" target=_blank>ForgotPassword?</a>
-        <br>
-        <br>
-        You don't have an account? <a href="SignupPage.html">Sign up</a>
-        <br>
-        <br>
-        <input type="submit" value="Login">
-
-    </form>
-
+            <input type="checkbox" id="rembember"> <label for="rembember"> Remember Me </label>
+            &nbsp&nbsp
+            <br>
+            <br>
+            <a href="ForgetPassword.html" target=_blank>ForgotPassword?</a>
+            <br>
+            <br>
+            You don't have an account? <a href="SignupPage.html">Sign up</a>
+            <br>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+<footer>
+    <H2>CONTACT US</H2>
+    <div class="contact-info">
+        <ul>
+            <li><i class="fa-solid fa-phone"></i> +97 356 87</li>
+            <li><i class="fa-solid fa-envelope"></i> email@gmail.com</li>
+            <li><i class="fab fa-facebook"></i> <a href="https://facebook" target="_blank">Facebook</a></li>
+        </ul>
+    </div>
+</footer>
 </body>
-
 </html>
