@@ -1,0 +1,153 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #f7f7f5;
+}
+
+header .top{
+    width:100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: auto;
+    justify-content: space-between;
+    padding:30px 200px;
+    background: #6F4E37;
+    margin-bottom: 20px;
+}
+.logo a{
+    text-decoration: none;
+    font-size:1.3em;
+    font-weight: 700;
+    color:#f7f7f5;
+}
+
+.navigation a{
+    position: relative;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #f7f7f5;
+    font-size:1.1em;
+    font-weight: 500;
+}
+
+.navigation a::after{
+    content:'';
+    position: absolute;
+    width:100%;
+    height: 3px;
+    background: #f7f7f5;
+    border-radius: 5px;
+    left:0;
+    bottom:-5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin:right ;
+}
+
+.navigation a:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.navigation .login-signup-btn{
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    background:transparent;
+    color: #f7f7f5;
+    outline: none;
+    border: 2px solid white;
+    cursor: pointer;
+    font-size:1.1em;
+    transition: 0.5s ease;
+    margin-right: 10px;
+}
+
+.navigation .login-signup-btn:hover{
+    color:black;
+    background: #f7f7f5;
+}
+
+.main{
+    background: #6F4E37;
+    border-radius: 15px;
+    margin:100px;
+    padding: 50px;
+    box-shadow: 5px 5px 50px 2px ;
+}
+
+.main h2{
+    color:#f7f7f5;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.about-us p{
+    margin-bottom: 40px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #f7f7f5;
+}
+.main .img{
+    display: flex;
+    justify-content: space-between;
+}
+.details{
+    color: #f7f7f5;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+.contact-info i{
+    font-size: 1.3em;
+    transition: .5s ease;
+}
+.contact-info .fa-facebook:hover{
+    color: #4267B2;
+
+}
+
+.contact-info a{
+    text-decoration: none;
+    color:#f7f7f5;
+
+}
+
+footer h2{
+    text-align: center;
+    color: #f7f7f5;
+}
+
+footer{
+    width:100%;
+    padding:30px 200px;
+    background: #6F4E37;
+}
+
+.contact-info ul{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.contact-info ul li {
+    list-style: none;
+    color: #f7f7f5;
+    font-size: 1.2em;
+    font-weight: 600;
+    align-items: center;
+}
+
+.contact-info .fa-envelope:hover{
+    color: #000000;
+}
+
+.contact-info .fa-phone:hover{
+    color: #000000;
+}
+
