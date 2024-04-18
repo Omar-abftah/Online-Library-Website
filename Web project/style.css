@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     padding:0;
     margin:0;
     box-sizing: border-box;
+    font-family: Roboto;
 }
 
 body{
-    background: #f7f7f5;
+    background: #fff;
 }
 
 header .top{
@@ -17,21 +19,21 @@ header .top{
     z-index: auto;
     justify-content: space-between;
     padding:30px 200px;
-    background: #6F4E37;
+    background: transparent;
     margin-bottom: 20px;
 }
 .logo a{
     text-decoration: none;
     font-size:1.3em;
     font-weight: 700;
-    color:#f7f7f5;
+    color:#f9b17a;
 }
 
 .navigation a{
     position: relative;
     margin-right: 30px;
     text-decoration: none;
-    color: #f7f7f5;
+    color: #f9b17a;
     font-size:1.1em;
     font-weight: 500;
 }
@@ -41,7 +43,7 @@ header .top{
     position: absolute;
     width:100%;
     height: 3px;
-    background: #f7f7f5;
+    background: #f9b17a;
     border-radius: 5px;
     left:0;
     bottom:-5px;
@@ -54,27 +56,29 @@ header .top{
     transform: scaleX(1);
     transform-origin: left;
 }
+
 .navigation .login-signup-btn{
-    width: 70px;
-    height: 30px;
-    border-radius: 5px;
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
     background:transparent;
-    color: #f7f7f5;
+    color: #fff;
     outline: none;
-    border: 2px solid white;
+    border: 1px solid white;
     cursor: pointer;
-    font-size:1.1em;
+    font-size:1.2em;
+    font-weight: 600;
     transition: 0.5s ease;
     margin-right: 10px;
 }
 
 .navigation .login-signup-btn:hover{
     color:black;
-    background: #f7f7f5;
+    background: #f9b17a;
 }
 
 .main{
-    background: #6F4E37;
+    background: #676f9d;
     border-radius: 15px;
     margin:100px;
     padding: 50px;
@@ -82,7 +86,7 @@ header .top{
 }
 
 .main h2{
-    color:#f7f7f5;
+    color:#fff;
     text-align: center;
     margin-bottom: 10px;
 }
@@ -91,14 +95,14 @@ header .top{
     margin-bottom: 40px;
     font-size: 1.2em;
     font-weight: 500;
-    color: #f7f7f5;
+    color: #fff;
 }
 .main .img{
     display: flex;
     justify-content: space-between;
 }
 .details{
-    color: #f7f7f5;
+    color: #fff;
     padding-top: 10px;
     font-weight: 500;
     font-size: 1.1em;
@@ -114,19 +118,19 @@ header .top{
 
 .contact-info a{
     text-decoration: none;
-    color:#f7f7f5;
+    color:#fff;
 
 }
 
 footer h2{
     text-align: center;
-    color: #f7f7f5;
+    color: #fff;
 }
 
 footer{
     width:100%;
     padding:30px 200px;
-    background: #6F4E37;
+    background: transparent;
 }
 
 .contact-info ul{
@@ -136,18 +140,26 @@ footer{
 }
 
 .contact-info ul li {
+    display: flex;
     list-style: none;
-    color: #f7f7f5;
+    color: #676f9d;
     font-size: 1.2em;
     font-weight: 600;
     align-items: center;
+    align-content: center;
+}
+
+.contact-info ul li .info{
+    color: #fff;
+    font-weight: 500;
+
 }
 
 .contact-info .fa-envelope:hover{
-    color: #000000;
+    color: #fff;
 }
 
 .contact-info .fa-phone:hover{
-    color: #000000;
+    color:#f9b17a;
 }
 
