@@ -1,0 +1,88 @@
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: rgb(22, 126, 160);
+    border-radius: 10px;
+}
+
+header .top {
+    backdrop-filter: blur(20px);
+    width: 100%;
+    display: flex;
+    position: fixed;
+    backdrop-filter: blur(20px);
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 200px;
+    background: lightblue;
+    margin-bottom: 20px;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.logo a:hover {
+    color: black;
+}
+
+.navigation a {
+    position: relative;
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    border-radius: 5px;
+    left: 0;
+    bottom: -5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    transform-origin: right;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.navigation .login-signup-btn {
+    width: 120px;
+    height: 50px;
+    border-radius: 6px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: 1px solid white;
+    cursor: pointer;
+    font-size: 1.2em;
+    font-weight: 600;
+    transition: 0.5s ease;
+    margin-right: 10px;
+}
+
+.navigation .login-signup-btn:hover {
+    color: black;
+    background: #fff;
+}
