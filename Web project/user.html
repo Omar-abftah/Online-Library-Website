@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html>
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avaliable Book</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <title>Available Books</title>
-</head>
-
-<body class="available">
-    <header>
-        <div class="top">
-            <div class="logo">
-                <a href="HomePage.html">Triple T</a>
+    
+</head> 
+    <body class="p">
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <a href="HomePage.html">
+                        <i class="fa-solid fa-book-open"></i> <span>Triple T</span>
+                    </a>
+                </div>
+                <nav class="navigation">
+                    <form class="form">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search"/>
+                            <button type="submit">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25" width="10" height="10">
+                                    <path fill="#fff" d="M16.354 14.646a6 6 0 1 1 1.414-1.414l3.535 3.536a1 1 0 0 1-1.415 1.415l-3.536-3.537zM15 10a5 5 0 1 0-10 0 5 5 0 0 0 10 0z"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                </nav>
+                <nav class="navigation">
+                    <a href="borrow_book.html">Borrow a Book</a>
+                    <a href="borrowed_books_users.html">My Books</a>
+                </nav>
             </div>
-            <nav class="navigation">
-                <a href="user.html">Available books</a>
-                <a href="borrowed_books_admin.html">Borrowed Books</a>
-                <a href="AddBooks.html">Add a book</a>
-            </nav>
-        </div>
-    </header>
-    <br><br><br><br><br>
-    <section class="main">
-        <form action="" id="search-form">
-            <label id="search"><b>
-                    <h3>Search</h3>
-                </b></label>
-            <input type="search" id="search-bar" placeholder="what are you looking for?" />
-            <button type="submit" id="search-btn">Search</button>
-            <div class="search-result"></div>
-        </form>
-        </div>
-        <br><br>
-        <button id="addbook">Add a new Book</button>
-        <br><br>
-        <h2 id="TB">Trending Books</h2>
-        <div id="trending-books">
-            <div>
-                <h3>Game of thrones</h3>
+        </header>
+            
+        <div class="c2">
+            <div class="book">
                 <img src="images/AGameOfThrones.jpg" />
+                <div class="book-details">
+                    <h3>Game of thrones</h3>
                 <p><b>Author</b>: George R.R</p>
                 <p><b>Publisher</b>: publisherExample<br /></p>
                 <p><b>Publishing Year</b>: PublishingYearExample<br /></p>
@@ -49,16 +46,12 @@
                     laudantium
                     provident quo natus! Impedit, unde enim? <br /></p>
                 <p><b>Available to borrow<br /></p>
-                <a href="borrow_book.html">borrow the book</a>
+                    <div><br>
+                    <button>Borrow</button>
+                    </div>
             </div>
+ </div>
         </div>
-        <h2 id="R">Romance</h2>
-        <div id="romance-books"></div>
-        <h2 id="F">Fantasy</h2>
-        <div id="fantasy-books"></div>
-    </section>
-    <script src="admin.js"></script>
-    <script src="AddBooks.js"></script>
-</body>
-
+        <script src="user.html"></script>  
+    </body>
 </html>
