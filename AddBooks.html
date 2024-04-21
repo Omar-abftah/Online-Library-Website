@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Library</title>
+    <meta name="description" content="This Is Our Online Library">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="forms">
+    <header> 
+        <div class="top"> 
+            <div class="logo"> 
+                <a href="HomePage.html">Triple T</a> 
+            </div> 
+            <nav class="navigation"> 
+                <a href="admin.html">Available books</a> 
+                <a href="borrowed_books_admin.html">Borrowed Books</a> 
+            </nav> 
+        </div> 
+    </header> 
+    <h1>Add Books To The Library</h1>
+    <div class="c">
+        <form class="form" method="post"> 
+            <div class="input-group">
+                <label for="title"><b>Title:</b></label>
+                <input type="text" id="title" name="title" required>
+            </div>
 
-<body>
-    <h2>Add Books To The Library</h2>
-    <div>
-        <form method="post" id="bookForm">
-            <label for="title"><b>Title:</b></label><br>
-            <input type="text" id="title" name="title" required><br><br>
+            <div class="input-group">
+                <label for="author"><b>Author:</b></label>
+                <input type="text" id="author" name="author" required>
+            </div>
 
-            <label for="author"><b>Author:</b></label><br>
-            <input type="text" id="author" name="author" required><br><br>
+            <div class="input-group">
+                <label for="published"><b>Published Year:</b></label>
+                <input type="text" id="published" name="published" required>
+            </div>
 
-            <label for="published"><b>Published Year:</b></label><br>
-            <input type="text" id="published" name="published" required><br><br>
+            <div class="input-group">
+                <label for="publisher"><b>Publisher:</b></label>
+                <input type="text" id="publisher" name="publisher" required>
+            </div>
 
-            <label for="publisher"><b>Publisher:</b></label><br>
-            <input type="text" id="publisher" name="publisher" required><br><br>
+            <div class="input-group">
+                <label for="quantity"><b>Quantity:</b></label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
 
-            <label for="quantity"><b>Quantity:</b></label><br>
-            <input type="number" id="quantity" name="quantity" required><br><br>
+            <div class="input-group">
+                <label for="category"><b>Category:</b></label>
+                <input type="text" id="category" name="category" required>
+            </div>
 
-            <label for="category"><b>Category:</b></label><br>
-            <input type="text" id="category" name="category" required><br><br>
+            <div class="input-group">
+                <label for="isbn"><b>ISBN:</b></label>
+                <input type="number" id="isbn" name="isbn" required>
+            </div>
 
-            <label for="isbn"><b>ISBN:</b></label><br>
-            <input type="number" id="isbn" name="isbn" required><br><br>
+            <div class="input-group">
+                <label for="Book_Cover"><b>Upload Book Cover:</b></label>
+                <input type="file" id="Book_Cover" name="Book_Cover">
+            </div>
 
-            <label for="description"><b>Description:</b></label><br>
-            <textarea id="description" name="description" rows="5" cols="50" required></textarea><br><br>
+            <div class="input-group">
+                <label for="description"><b>Description:</b></label>
+                <textarea id="description" name="description" rows="6" required></textarea>
+            </div>
 
-            <label for="Book_Cover"><b>Upload Book Cover:</b></label><br>
-            <input type="file" id="Book_Cover" name="Book_Cover"><br><br>
-
-            <input type="submit" value="Submit"> <input type="reset" value="Reset">
-
-
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
         </form>
     </div>
+    <script src="add.js"></script> 
 
 </body>
 
