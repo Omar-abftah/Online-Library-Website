@@ -8,23 +8,20 @@
     <title>Available Books</title>
 </head>
 
-<body class="Available">
+<body class="available">
     <header>
         <div class="top">
             <div class="logo">
-                <a href="HomePage.html">
-                    <img src="#logo" alt="">Triple T
-                </a>
+                <a href="HomePage.html">Triple T</a>
             </div>
             <nav class="navigation">
                 <a href="user.html">Available books</a>
-                <a href="borrow_book.html">Borrow a Book</a>
-                <a href="borrowed_books_users.html">My Books</a>
-                <button class="login-signup-btn" onclick="redirectLoginBtn()">Login</button>
-                <button class="login-signup-btn" onclick="redirectSignUpBtn()">Sign Up</button>
+                <a href="borrowed_books_admin.html">Borrowed Books</a>
+                <a href="AddBooks.html">Add a book</a>
             </nav>
         </div>
     </header>
+    <br><br><br><br><br>
     <section class="main">
         <form action="" id="search-form">
             <label id="search"><b>
@@ -36,14 +33,31 @@
         </form>
         </div>
         <br><br>
+        <button id="addbook">Add a new Book</button>
+        <br><br>
         <h2 id="TB">Trending Books</h2>
-        <div id="trending-books"></div>
+        <div id="trending-books">
+            <div>
+                <h3>Game of thrones</h3>
+                <img src="images/AGameOfThrones.jpg" />
+                <p><b>Author</b>: George R.R</p>
+                <p><b>Publisher</b>: publisherExample<br /></p>
+                <p><b>Publishing Year</b>: PublishingYearExample<br /></p>
+                <p><b>ISBN</b>: 32165546554651654<br /></p>
+                <p><b>Description</b>: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate incidunt
+                    obcaecati labore dolorem repellat tenetur porro eum omnis itaque architecto, cum quia quas
+                    laudantium
+                    provident quo natus! Impedit, unde enim? <br /></p>
+                <p><b>Available to borrow<br /></p>
+                <a href="borrow_book.html">borrow the book</a>
+            </div>
+        </div>
         <h2 id="R">Romance</h2>
         <div id="romance-books"></div>
         <h2 id="F">Fantasy</h2>
         <div id="fantasy-books"></div>
     </section>
-    <script src="user.js"></script>
+    <script src="admin.js"></script>
     <script src="AddBooks.js"></script>
 </body>
 
