@@ -1,23 +1,65 @@
 <!DOCTYPE html>
-    <body>
-        <b><h2>Edit Details</h2></b>
-        <br/>
-        <div>
-            <form id="form" method="post">
-            <p><b>Format:</b></p>
-            <input id="format" type="text" required>
-            <p><b>Published:</b></p>
-            <input id="published" type="text" required>
-            <p><b>ISBN:</b></p>
-            <input id="ISBN" type="text" required>
-            <p><b>Language:</b></p>
-            <input id="Language" type="text" required>
-            <p><b>Descriptiopn</b></p>
-            <textarea id="description" rows="5" cols="50" required></textarea>
-            </form>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Edit Book</title>
+</head>
+
+<body class="forms">
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">Triple T</a>
+            </div>
+            <nav class="navigation">
+                <a href="admin.html">Available books</a>
+                <a href="borrowed_books_admin.html">Borrowed Books</a>
+                <a href="AddBooks.html">Add a book</a>
+            </nav>
         </div>
-        <br/>
-        <button id="btn">Edit</button>
-        
-    </body>
+    </header>
+    <h1>Edit Details</h1>
+    <div class="c">
+        <form class="form" method="post">
+            <div class="input-group">
+                <label>Book Title:</label>
+                <input id="book-title" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Author:</label>
+                <input id="author" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Format:</label>
+                <input id="format" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Published:</label>
+                <input id="published" type="number" required>
+            </div>
+            <div class="input-group">
+                <label>ISBN:</label>
+                <input id="ISBN" type="number" required>
+            </div>
+            <div class="input-group">
+                <label>Category:</label>
+                <input id="category" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Language:</label>
+                <input id="language" type="text" required>
+            </div>
+            <div class="input-group">
+                <label>Description:</label>
+                <textarea id="description" rows="5" cols="50" required></textarea>
+            </div>
+            <input id="btn" type="submit" value="Edit">
+        </form>
+    </div>
+    <script src="edit.js"></script>
+</body>
+
 </html>
