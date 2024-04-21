@@ -1,107 +1,50 @@
 <!DOCTYPE html>
+<html>
 
-<body>
-    <div class="container">
-        <div class="website-logo">
-            <a href="UserHomePage.html">
-                <img src="#logo" alt="">Triple T
-            </a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Available Books</title>
+</head>
+
+<body class="Available">
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">
+                    <img src="#logo" alt="">Triple T
+                </a>
+            </div>
+            <nav class="navigation">
+                <a href="user.html">Available books</a>
+                <a href="borrow_book.html">Borrow a Book</a>
+                <a href="borrowed_books_users.html">My Books</a>
+                <button class="login-signup-btn" onclick="redirectLoginBtn()">Login</button>
+                <button class="login-signup-btn" onclick="redirectSignUpBtn()">Sign Up</button>
+            </nav>
         </div>
-    </div>
-    <nav class="navigation">
-        <ul>
-            <li><a href="#search" class="sign-in">Search</a></li>
-            <li><a href="#TB" class="login">Treanding Books</a></li>
-            <li><a href="#R" class="login">Romance Books</a></li>
-            <li><a href="#F" class="login">Fantasy Books</a></li>
-        </ul>
-    </nav>
-    <div>
-        <label id="search"><b>
-                <h3>Search</h3>
-            </b></label>
-        <select name="book" id="book">
-            <option value="1">All</option>
-            <option value="2">titles</option>
-            <option value="3">author</option>
-            <optgroup label="category">
-                <option value="4">Treanding Books</option>
-                <option value="5">Romance Books</option>
-                <option value="6">Fantasy Books</option>
-            </optgroup>
-        </select>
-        <input type="search" placeholder="what are you looking for?" />
-    </div>
-    <br />
-    <br />
-    <p id="TB">
-    <h2>Trending Books</h2>
-    </p>
-    <br />
-    <div>
-        <p>
-        <h3>Game of Thrones</h3>
-        </p>
-        <img src="images/AGameOfThrones.jpg" alt="logo">
-        <br />
-        <a href="trendingbook1.html" target="_blank" title="game of thrones">details</a>
-        <br />
-        <a href="borrow_book.html">Borrow</a>
-    </div>
-    <hr />
-    <div>
-        <p>
-        <h3>Control Your Mind and Master Your Feelings</h3>
-        </p>
-        <img src="images/0012009823-L.jpg" title="logo">
-        <br />
-        <a href="trendingbook2.html" target="_blank">details</a>
-        <br />
-        <mark>Not in Library</mark>
-    </div>
-    <br />
-    <hr />
-    <br />
-    <p id="R">
-    <h2>Romance</h2>
-    </p>
-    <br />
-    <div>
-        <p>
-        <h3>The Gathering (Armstrong novel)</h3>
-        </p>
-        <img src="images/DP-gathering.jpg" alt="logo">
-        <br />
-        <a href="romance1.html" target="_blank">details</a>
-        <br />
-        <a href="borrow_book.html">Borrow</a>
-    </div>
-    <hr />
-    <div>
-        <p>
-        <h3>Thurston House (novel)</h3>
-        </p>
-        <img src="images/Thurston_house_book_cover.jpg" alt="logo">
-        <br />
-        <a href="romance2.html" target="_blank">details</a>
-        <br />
-        <a href="borrow_book.html">Borrow</a>
-    </div>
-    <hr />
-    <p id="F">
-    <h2>Fantasy</h2>
-    </p>
-    <br>
-    <div>
-        <p>
-        <h3>Industrial Magic</h3>
-        </p>
-        <img src="images/IndustrialMagicUK.jpg" alt="logo">
-        <br />
-        <a href="fantasy.html" target="_blank">details</a>
-        <br />
-        <mark>Not in Library</mark>
-    </div>
+    </header>
+    <section class="main">
+        <form action="" id="search-form">
+            <label id="search"><b>
+                    <h3>Search</h3>
+                </b></label>
+            <input type="search" id="search-bar" placeholder="what are you looking for?" />
+            <button type="submit" id="search-btn">Search</button>
+            <div class="search-result"></div>
+        </form>
+        </div>
+        <br><br>
+        <h2 id="TB">Trending Books</h2>
+        <div id="trending-books"></div>
+        <h2 id="R">Romance</h2>
+        <div id="romance-books"></div>
+        <h2 id="F">Fantasy</h2>
+        <div id="fantasy-books"></div>
+    </section>
+    <script src="user.js"></script>
+    <script src="AddBooks.js"></script>
 </body>
 
 </html>
