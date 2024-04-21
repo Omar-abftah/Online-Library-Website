@@ -1,65 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <title>Borrow Book</title>
-  <link rel="stylesheet" href="style.css">
-
-</head>
-<body class="forms">
-  <header> 
-    <div class="top"> 
-        <div class="logo"> 
-            <a href="HomePage.html">Triple T</a> 
-        </div> 
-        <nav class="navigation"> 
-            <a href="user.html">Available books</a> 
-            <a href="borrowed_books_users.html">My Books</a> 
-        </nav> 
-    </div> 
-</header> 
-  <h1>Borrow Book</h1>
-  <div class="c">
-    <form class="form" onsubmit="handleForm(event)">
-
-      <div class="input-group">
-        <label for="borrowerName">Borrower's Name:</label>
-        <input type="text" id="borrowerName" name="borrowerName" required>
-      </div>
-
-      <div class="input-group">
-        <label for="telephone">Telephone Number:</label>
-        <input type="tel" id="telephone" name="telephone" required>
-      </div>
-
-      <div class="input-group">
-        <label for="national-id">National ID:</label>
-        <input type="text" id="national-id" name="national-id" required>
-      </div>
-
-      <div class="input-group">
-        <label for="book-title">Book Title:</label>
-        <input type="text" id="book-title" name="book-title" required>
-      </div>
-
-      <div class="input-group">
-        <label for="start_date">Start Date:</label>
-        <input type="date" id="start_date" name="start_date" required>
-      </div>
-
-      <div class="input-group">
-        <label for="due_date">Due Date:</label>
-        <input type="date" id="due_date" name="due_date" required>
-      </div>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required>
-      <input type="submit" value="Borrow Book">
-    </form>
-  </div>
-  <script src="borrow.js"></script> 
-
-</body>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="stylesheet.css">
+        <title>Borrow Book</title>
+    </head>
+    <body class="forms">
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <a href="HomePage.html">Triple T</a>
+                </div>
+                <nav class="navigation">
+                    <a href="user.html">Available books</a>
+                    <a href="borrowed_books_users.html">Borrowed Books</a>
+                </nav>
+            </div>
+      </header>
+      <h1>Borrow Book</h1>
+      <div class="c">
+      <form class="form">
+          <div class="input-group">
+              <label for="borrowerName">Borrower's Name:</label>
+              <input type="text" id="borrowerName" name="borrowerName" required>
+          </div>
+          <div class="input-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          </div>
+          <div class="input-group">
+              <label for="telephone">Telephone Number:</label>
+              <input type="tel" id="telephone" name="telephone" required>
+          </div>
+        <div class="input-group">
+          <label for="national-id">National ID:</label>
+          <input type="text" id="national-id" name="national-id" required>
+        </div>
+        <div class="input-group">
+          <label for="book-title">Book Title:</label>
+          <input type="text" id="book-title" name="book-title" required>
+        </div>
+        <div class="input-group">
+          <label for="start_date">Start Date:</label>
+          <input type="date" id="start_date" name="start_date" required>
+        </div>
+        <div class="input-group">
+          <label for="due_date">Due Date:</label>
+          <input type="date" id="due_date" name="due_date" required>
+        </div>
+          <input type="submit" value="Borrow Book">
+        </form>
+        </div>
+        <script src="main.js"></script>
+        <script>borrow()</script>
+        </body>
 
 </html>
