@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Edit Book</title>
+</head>
+
+<body class="forms">
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">Triple T</a>
+            </div>
+            <nav class="navigation">
+                <a href="admin.html">Available books</a>
+                <a href="AddBooks.html">Add a book</a>
+                <a href="edit.html">Edit Books</a>
+                <a href="borrowed_books_admin.html">Borrowed Books</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Delete Book</h1>
+    <div class="c">
+        <form class="form" method="post">
+            <div class="input-group">
+             <label for="bookTitle">Enter Book Title:</label>
+             <input type="text" id="bookTitle" name="bookTitle" required>
+            </div>
+            <input id="btn" type="submit" value="Delete">
+    </form>
+    <script src="javaScript/delete_book.js"></script>
+</body>
+
+</html>
