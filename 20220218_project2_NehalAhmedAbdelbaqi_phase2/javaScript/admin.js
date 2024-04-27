@@ -8,11 +8,10 @@ function renderBooks(obj) {
     let tempDiv = document.querySelector('.wrapper');
     let id;
     obj.map((o) => {
-        const booksDiv = document.querySelector('.c2');
         let s = '';
         s += `<div class="c2">`;
-        s += `<br><h3>${o.title}</h3>`;
         s += `<img src="${o.cover}"/>`;
+        s += `<h3>${o.title}</h3>`;
         s += '<div class="book-details">'
         s += `<p><b>Author</b>: ${o.author}<br/></p>`;
         s += `<p><b>Publisher</b>: ${o.publisher}<br/></p>`;
@@ -28,9 +27,7 @@ function renderBooks(obj) {
         }
         s += '</div>';
         s += '</div>'
-        tempDiv.innerHTML = s;
-        tempDiv.classList.add('book');
-        booksDiv.appendChild(tempDiv);
+        tempDiv.innerHTML += s;
     });
 }
 
