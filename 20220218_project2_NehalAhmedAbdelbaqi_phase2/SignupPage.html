@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+</head>
+
+<body class="forms">
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">Triple T</a>
+            </div>
+        </div>
+    </header>
+
+    <h1>Sign Up</h1>
+    <div class="c">
+        <form class="form" method="POST" action="/signup">
+            <div class="input-group">
+                <label for="name">First Name:</label>
+                <input type="text" required name="first name" id="name" placeholder="First name">
+            </div>
+            <div class="input-group">
+                <label for="name">Last Name:</label>
+                <input type="text" required name="Lirst name" id="name" placeholder="Lirst name">
+            </div>
+            <div class="input-group">
+                <label for="email">Email:</label>
+                <input type="text" required name="email" id="email" placeholder="Enter a valid Email">
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" required name="password" placeholder="Enter a complex password">
+            </div>
+            <div class="input-group">
+                <label for="password_confirmation">Confirm Password:</label>
+                <input type="password" required name="password_confirmation" id="password_confirmation"
+                    placeholder=" Confirm password">
+            </div>
+            <div class="input-group">
+                <label for=" phone number">Phone Number:</label>
+                <input type="tel" name="phone number" id="phone number" placeholder="Ex:01001111111 " pattern=[0-9]{11}>
+            </div>
+            <div class="input-group">
+                <label for="street-adress">Street adress:</label>
+                <input type="text" name="street-adress" id="street-adress" placeholder="Enter your street adress">
+            </div>
+            <div class="input-group">
+                <label for="postal code">Postal Code:</label>
+                <input type="text" name="postal code" id="postal code" placeholder="Enter your postal code">
+            </div>
+            <div class="input-group">
+                <label for="city">City:</label>
+                <input type="text" name="city" id="city" placeholder="Enter your city">
+            </div>
+            <div class="input-group">
+                <label for="country">Country:</label>
+                <input type="text" name="country" id="country" placeholder="Enter your country">
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="adminn"></input>
+                <label for="adminn">Register as Admin</label>
+            </div>
+            <input id="btn" type="submit" value="Sign Up">
+        </form>
+        <br>
+    </div>
+    <footer class="contact">
+        <H2>CONTACT US</H2>
+        <div class="contact-info">
+            <ul>
+                <li><i class="fa-solid fa-phone"></i> <span class="info"> +97 356 87</span></li>
+                <li><i class="fa-solid fa-envelope"></i> <span class="info"> email@gmail.com</span> </li>
+                <li><i class="fab fa-facebook"></i> <a href="https://facebook" target="_blank"> Facebook</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
