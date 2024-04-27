@@ -33,6 +33,7 @@ function renderBooks(obj) {
 }
 const searchBtn = document.querySelector('#search-btn');
 let tempDiv = document.createElement('div');
+tempDiv.classList.add('book');
 searchBtn.addEventListener('click', (e) => {
     e.preventDefault();
     tempDiv.innerHTML = "";
@@ -70,8 +71,7 @@ function getSearchResult(obj) {
     });
     if (isBookFound === false) {
         tempDiv.innerHTML = '<h3 class="error-msg">The book you are searching for is not available</h3>'
+        searchResult.appendChild(tempDiv);
     }
-    document.body.appendChild(tempDiv);
 }
 
-const borrowBtn = document.querySelector(".borrow-btn");
