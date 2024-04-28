@@ -23,11 +23,11 @@
         <form class="form" method="POST" action="/signup">
             <div class="input-group">
                 <label for="name">First Name:</label>
-                <input type="text" required name="first name" id="name" placeholder="First name">
+                <input type="text" required name="first name" id="first-name" placeholder="First name">
             </div>
             <div class="input-group">
                 <label for="name">Last Name:</label>
-                <input type="text" required name="Lirst name" id="name" placeholder="Lirst name">
+                <input type="text" required name="Lirst name" id="last-name" placeholder="Lirst name">
             </div>
             <div class="input-group">
                 <label for="email">Email:</label>
@@ -35,24 +35,24 @@
             </div>
             <div class="input-group">
                 <label for="password">Password:</label>
-                <input type="password" required name="password" placeholder="Enter a complex password">
+                <input type="password" required name="password" id="password" placeholder="Enter a complex password">
             </div>
             <div class="input-group">
                 <label for="password_confirmation">Confirm Password:</label>
-                <input type="password" required name="password_confirmation" id="password_confirmation"
+                <input type="password" required name="password_confirmation" id="password-confirmation"
                     placeholder=" Confirm password">
             </div>
             <div class="input-group">
                 <label for=" phone number">Phone Number:</label>
-                <input type="tel" name="phone number" id="phone number" placeholder="Ex:01001111111 " pattern=[0-9]{11}>
+                <input type="tel" name="phone number" id="phone-number" placeholder="Ex:01001111111 " pattern=[0-9]{11}>
             </div>
             <div class="input-group">
                 <label for="street-adress">Street adress:</label>
-                <input type="text" name="street-adress" id="street-adress" placeholder="Enter your street adress">
+                <input type="text" name="street-adress" id="street-address" placeholder="Enter your street adress">
             </div>
             <div class="input-group">
                 <label for="postal code">Postal Code:</label>
-                <input type="text" name="postal code" id="postal code" placeholder="Enter your postal code">
+                <input type="text" name="postal code" id="postal-code" placeholder="Enter your postal code">
             </div>
             <div class="input-group">
                 <label for="city">City:</label>
@@ -63,7 +63,7 @@
                 <input type="text" name="country" id="country" placeholder="Enter your country">
             </div>
             <div class="checkbox">
-                <input type="checkbox" id="adminn"></input>
+                <input type="checkbox" id="admin"></input>
                 <label for="adminn">Register as Admin</label>
             </div>
             <input id="btn" type="submit" value="Sign Up">
@@ -80,7 +80,7 @@
             </ul>
         </div>
     </footer>
-
+    <script src="javaScript/signUpPage.js"></script>
 </body>
 
 </html>
