@@ -22,21 +22,22 @@
         <form class="form" method="post">
             <div class="input-group">
                 <label>Email:</label>
-                <input type="email" required name="email" placeholder="Enter Your Email">
+                <input type="email" required name="email" placeholder="Enter Your Email" id="email">
             </div>
             <br><br>
             <div>
                 <label>Password:</label>
                 <input id="password" type="password" required name="Password" placeholder="Enter your Password">
             </div>
-            <div class="checkbox">
-                <input type="checkbox" id="rembember">
-                <label for="rembember"> Remember Me </label>
-            </div><br>
-            <input type="submit" value="Login">
-            <br>
-            <a id="fpassword" href="ForgetPassword.html" target=_blank>ForgotPassword?</a><br>
-            <p id="signup">You don't have an account? <a href="SignupPage.html">Sign up</a></p><br>
+            <div style="display: block;">
+                <div>
+                    <button type="submit" id="btn" class="btn" style="width:100%;margin-left: 150px;">Login</button>
+                </div>
+                <div>
+                    <a id="fpassword" href="ForgetPassword.html" target=_blank>ForgotPassword?</a><br>
+                    <p id="signup">You don't have an account? <a href="SignupPage.html">Sign up</a></p><br>
+                </div>
+            </div>
         </form>
         <br>
     </div>
@@ -50,6 +51,7 @@
             </ul>
         </div>
     </footer>
+    <script src="javaScript/loginPage.js"></script>
 </body>
 
 </html>
