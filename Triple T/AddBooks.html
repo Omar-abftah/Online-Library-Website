@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Add a book</title>
+    <meta name="description" content="This Is Our Book Store">
+    <link rel="stylesheet" href="stylesheet.css">
+    <style> </style>
+
+</head>
+
+<body class="forms">
+    <header>
+        <div class="top">
+            <div class="logo">
+                <a href="HomePage.html">Triple T</a>
+            </div>
+            <nav class="navigation">
+                <a href="admin.html">Available books</a>
+                <a href="edit.html">Edit Books</a>
+                <a href="delete.html">Delete Books</a>
+                <a href="borrowed_books_admin.html">Borrowed Books</a>
+            </nav>
+        </div>
+    </header>
+    <h1>Add Books To The Library</h1>
+    <div class="c">
+        <form method="post" class="form">
+            <div class="input-group">
+                <label for="title"><b>Title:</b></label>
+                <input type="text" id="title" name="title" required>
+            </div>
+            <div class="input-group">
+                <label for="author"><b>Author:</b></label>
+                <input type="text" id="author" name="author" required>
+            </div>
+            <div class="input-group">
+                <label for="published"><b>Published Year:</b></label>
+                <input type="text" id="published" name="published" required>
+            </div>
+            <div class="input-group">
+                <label for="publisher"><b>Publisher:</b></label>
+                <input type="text" id="publisher" name="publisher" required>
+            </div>
+            <div class="input-group">
+                <label for="quantity"><b>Quantity:</b></label>
+                <input type="number" id="quantity" name="quantity" required>
+            </div>
+            <div class="input-group">
+                <label for="category"><b>Category:</b></label>
+                <input type="text" id="category" name="category" required>
+            </div>
+            <div class="input-group">
+                <label for="isbn"><b>ISBN:</b></label>
+                <input type="number" id="isbn" name="isbn" required>
+            </div>
+            <div class="input-group">
+                <label for="Book_Cover"><b>Upload Book Cover:</b></label>
+                <input type="file" id="Book_Cover" name="Book_Cover">
+            </div>
+            <div class="input-group">
+                <label for="description"><b>Description:</b></label>
+                <textarea id="description" name="description" rows="5" cols="50" required></textarea>
+            </div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+    </div>
+    <script src="javaScript/AddBooks.js"></script>
+</body>
+
+</html>
